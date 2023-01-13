@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de Textos</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="config.js"></script>
+        <title>Encriptador de Textos</title>
+
+    </head>
+
+    <body>    
+        <header>
+            <img class="logoAl" src="imagenes/Logo.png">
+        </header>
+        <main>
+            <section class="estructura">   
+                <div class="campoTexto">
+                    <input class="areaTexto" id="areaTexto" type="text" placeholder="Ingrese el texto aquí" required autofocus>
+                </div>
+                <div class="campoSalida">
+                    <img id="munheco" src="imagenes/Muñeco.png">
+                    <h1 id="aviso">Ningún mensaje fue encontrado</h1>
+                    <textarea id="mensaje" name="areaSalida" rows="8" cols="10">Ingrese el texto que desees encriptar o desencriptar</textarea>
+                    <button type="button" id="copiar" onclick="copiado()">Copiar</button>
+                </div >
+                <div class="botonesEncriptado">
+                    <p class="advertencia">&#9888 Solo minusculas y sin acentos</p>
+                    <button type="button" id="encriptar" onclick="encriptar()">Encriptar</button>
+                    <button type="button" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </section>
+        </main>
+    <footer>
+            <p class="copyright">&copy Copyright Realizado por Martin Delgado el 13 de Diciembre 2023</p>          
+    </footer>        
+    </body>
+</html>
